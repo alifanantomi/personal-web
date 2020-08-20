@@ -1,4 +1,4 @@
-# personal-web
+# Personal Web
 
 Personal website about alif anantomi
 
