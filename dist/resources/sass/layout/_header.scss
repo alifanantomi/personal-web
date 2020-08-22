@@ -2,6 +2,7 @@
   height: 50px; 
 
   .header{
+    color: $main-dark;
     position: fixed;
     top: 0;
     left: 0;
@@ -17,22 +18,20 @@
       justify-content: space-between;
 
       .header-logo{
-        color: black;
         font-size: 28px;
         font-weight: 700;
 
-        @include small-mobile{
+        @include mobile{
           display: none;
         }
       }
 
       .header-logo-m{
-        color: black;
         font-size: 28px;
         font-weight: 700;
         display: none;
 
-        @include small-mobile{
+        @include mobile{
           display: inline;
         }
       }
@@ -43,11 +42,10 @@
         align-items: center;
 
         .header-menu-link{
-          color: black !important;
           margin-left: 25px;
-          font-family: 'Montserrat', sans-serif;
           font-size: 18px;
           font-weight: 500;
+          text-decoration: none;
         }
       }
     }

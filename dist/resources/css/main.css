@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: inherit !important;
+  text-decoration: none;
 }
 
 ul {
@@ -21,11 +22,78 @@ button {
   cursor: pointer;
 }
 
+.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 !important;
+}
+
+.content-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-list .content-list-component {
+  width: 100%;
+  margin: 10px 0;
+  text-decoration: none !important;
+}
+
+.content-list .content-list-component .content-list-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-list .content-list-component .content-list-content .content-list-img {
+  width: initial;
+  height: auto;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.content-list .content-list-component .content-list-content .content-list-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.content-list .content-list-component .content-list-content .content-list-tags {
+  padding: 10px 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .header-equal {
   height: 50px;
 }
 
 .header-equal .header {
+  color: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -50,25 +118,23 @@ button {
 }
 
 .header-equal .header .header-wrapper .header-logo {
-  color: black;
   font-size: 28px;
   font-weight: 700;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 400px) {
   .header-equal .header .header-wrapper .header-logo {
     display: none;
   }
 }
 
 .header-equal .header .header-wrapper .header-logo-m {
-  color: black;
   font-size: 28px;
   font-weight: 700;
   display: none;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 400px) {
   .header-equal .header .header-wrapper .header-logo-m {
     display: inline;
   }
@@ -88,10 +154,122 @@ button {
 }
 
 .header-equal .header .header-wrapper .header-menu .header-menu-link {
-  color: black !important;
   margin-left: 25px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 500;
+  text-decoration: none;
+}
+
+.content {
+  padding: 70px 80px;
+}
+
+.section-1 {
+  background-color: white;
+  color: black;
+}
+
+.section-2 {
+  background-color: black;
+  color: white;
+}
+
+.content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-wrapper .content-welcome {
+  min-height: calc(100vh - 130px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content-wrapper .content-welcome .content-welcome-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-wrapper .content-welcome .content-welcome-title {
+  padding: 20px 0;
+  font-size: 48px;
+  font-weight: 600;
+  float: left;
+}
+
+.content-wrapper .content-welcome .content-welcome-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content-wrapper .content-welcome .content-welcome-social a {
+  padding: 20px 0;
+  margin-right: 20px;
+}
+
+.content-wrapper .content-welcome .content-welcome-social .icon {
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+}
+
+.content-wrapper .scroll-arrow {
+  font-size: 500;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  float: right;
+}
+
+.content-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-header .content-title {
+  padding: 30px 0;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */
