@@ -1,0 +1,56 @@
+.footer{
+  color: white;
+  background-color: black;
+  padding: 70px 80px;
+  font-family: $montserrat;
+  
+  .footer-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .footer-title{
+      font-size: 36px;
+      font-weight: 700;
+    }
+    
+    .footer-desc{
+      font-family: $sourcesanspro;
+      font-size: 18px;
+      font-weight: 400;
+      max-width: 525px;
+      margin: 20px 0 30px 0;
+    }
+    .footer-contact{
+      width: 100%;
+    }
+
+    .footer-subscription{
+      width: 100%;
+
+      .footer-copyright{
+        font-size: 12px;
+        opacity: 50%;
+      }
+      
+      .input-email{
+        font-size: 14px;
+        padding: 8px 20px;
+        border: 0;
+        background-color: #3B4351;
+        opacity: 80%;
+        color: white;
+        border-radius: 4px;
+      }
+      
+      .input-button{
+        font-size: 14px;
+        padding: 8px 16px;
+        border: 0;
+        background-color: #3B4351;
+        color: white;
+        border-radius: 4px;
+      }
+    }
+  }
+}

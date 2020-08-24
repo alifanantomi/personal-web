@@ -10,22 +10,20 @@
 .content-list{
   width: 100%;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   
   .content-list-component{
-    width: 100%;
-    margin: 10px 0;
-    text-decoration: none !important;
+    width: 45%;
+    margin-bottom: 6%;
 
     .content-list-content{
       display: flex;
       flex-direction: column;
 
       .content-list-img{
-        width: initial;
+        width: 100%;
         height: auto;
-        background-size: cover;
         margin-bottom: 10px;
       }
       
@@ -41,6 +39,13 @@
         font-family: $sourcesanspro;
         font-size: 20px;
         font-weight: 400;
+      }
+
+      .content-list-article{
+        font-family: $sourcesanspro;
+        font-size: 500;
+        font-weight: 500;
+        padding: 10px 0;
       }
     }
     
