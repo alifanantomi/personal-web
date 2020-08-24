@@ -6,12 +6,7 @@
     <title>Alif Anantomi</title>
 
     <!-- Style -->
-    <link rel="stylesheet" type="text/css" href="resources/css/index.css">
-    
-    <!-- Spectre CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/main.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
@@ -25,9 +20,9 @@
           <div class="header-logo">Alif Anantomi</div>
           <div class="header-logo-m">Alif</div>
           <div class="header-menu">
-            <a href="#" class="header-menu-link">Work</a>
-            <a href="#" class="header-menu-link">Blog</a>
-            <a href="#" class="header-menu-link">Hire me</a>
+            <a href="#" class="header-menu-link" style="text-decoration: none">Work</a>
+            <a href="#" class="header-menu-link" style="text-decoration: none">About</a>
+            <a href="#" class="header-menu-link" style="text-decoration: none">Blog</a>
           </div>
         </div>
       </div>
@@ -40,14 +35,18 @@
       <section class="content section-1">
         <div class="content-wrapper">
           <section class="content-welcome">
-            <img class="content-welcome-img" src="resources/assets/person-code-medium.jpg" alt="">
-            <div class="content-welcome-desc">
+            <div class="content-welcome-wrapper">
               <span class="content-welcome-title">
-                A web designer, developer, and blogger<br>
+                A passionate front end developer<br>and web designer
               </span>
-              <div class="content-welcome-pharagraph">We are a value design branding studio, making design valuable beyond the aesthetics. By applying modular solutions & rigorously extracting deep-seated meaning, we derive customisable identities - one case at a time.</div>
-              <button href="" class="content-welcome-btn">Hire now</button>
+              <div class="content-welcome-social">
+                <a target="_blank" href="https://github.com/alifanantomi"><img src="/dist/resources/assets/icon/github.svg" alt="" class="icon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/alifanantomi/"><img src="/dist/resources/assets/icon/linkedin.svg" alt="" class="icon"></a>
+                <a target="_blank" href="#"><img src="/dist/resources/assets/icon/dribbble.svg" alt="" class="icon"></a>
+                <a target="_blank" href="https://instagram.com/alifanantomi/"><img src="/dist/resources/assets/icon/instagram.svg" alt="" class="icon"></a>
+              </div>
             </div>
+            <span class="scroll-arrow">SCROLL</span>
           </section>
         </div>
       </section>
@@ -57,65 +56,43 @@
       <section class="content section-2">
         <div class="content-wrapper">
           <section class="content-header">
-            <span class="content-title">Projects</span>
-            <section class="content-navigation">
-              <a class="content-navigation-title active" href="#" style="color: white !important;">Design Work</a>
-              <a class="content-navigation-title" href="#" style="color: white !important;">Web Application Work</a>
-            </section>
+            <span class="content-title">SELECTED PROJECTS</span>
           </section>
-          <section class="content-list column" style="margin: 30px 0">
-            <section class="content-list row">
-              <a href="" class="content-list-component" style="margin-right: 50px"> 
-                <header class="content-list-header">
-                  <span class="content-list-number">01</span>
-                  <span class="content-list-title">Contact Lens Packaging</span>
-                </header>
-                <div class="content-list-content">
-                  <div class="content-list-img" style="background-image: url('resources/assets/contact-lens.jpg');"></div>
-                  <div class="content-list-tags">Product design / Packaging design / Beauty</div>
-                  <article class="content-list-article"></article>
-                </div>
-              </a>
-              <a href="" class="content-list-component">
-                <header class="content-list-header">
-                  <span class="content-list-number">02</span>
-                  <span class="content-list-title">Contact Lens Packaging</span>
-                </header>
-                <div class="content-list-content">
-                  <div class="content-list-img" style="background-image: url('resources/assets/lens-cap.jpg');"></div>
-                  <div class="content-list-tags">Product design / Packaging design / Beauty</div>
-                  <article class="content-list-article"></article>
-                </div>
-              </a>
-            </section>
-            <section class="content-list row">
-              <a href="" class="content-list-component" style="margin-right: 50px"> 
-                <header class="content-list-header">
-                  <span class="content-list-number">03</span>
-                  <span class="content-list-title">Contact Lens Packaging</span>
-                </header>
-                <div class="content-list-content">
-                  <div class="content-list-img" style="background-image: url('resources/assets/lens-cap.jpg');"></div>
-                  <div class="content-list-tags">Product design / Packaging design / Beauty</div>
-                  <article class="content-list-article"></article>
-                </div>
-              </a>
-              <a href="" class="content-list-component">
-                <header class="content-list-header">
-                  <span class="content-list-number">04</span>
-                  <span class="content-list-title">Contact Lens Packaging</span>
-                </header>
-                <div class="content-list-content">
-                  <div class="content-list-img" style="background-image: url('resources/assets/contact-lens.jpg');"></div>
-                  <div class="content-list-tags">Product design / Packaging design / Beauty</div>
-                  <article class="content-list-article"></article>
-                </div>
-              </a>
-            </section>
+          <section class="content-list row">
+            <div class="content-list-component"> 
+              <div class="content-list-content">
+                <img src="/dist/resources/assets/images/contact-lens 1.png" alt="" class="content-list-img">
+                <span class="content-list-title">Contact Lens Packaging</span>
+                <div class="content-list-tags">Product design / Packaging design / Beauty</div>
+              </div>
+            </div>
+            <div class="content-list-component"> 
+              <div class="content-list-content">
+                <img src="/dist/resources/assets/images/lens-cap.jpg" alt="" class="content-list-img">
+                <span class="content-list-title">Contact Lens Packaging</span>
+                <div class="content-list-tags">Product design / Packaging design / Beauty</div>
+              </div>
+            </div>
+            <div class="content-list-component"> 
+              <div class="content-list-content">
+                <img src="/dist/resources/assets/images/smooties.jpg" alt="" class="content-list-img">
+                <span class="content-list-title">Contact Lens Packaging</span>
+                <div class="content-list-tags">Product design / Packaging design / Beauty</div>
+              </div>
+            </div>
+            <div class="content-list-component"> 
+              <div class="content-list-content">
+                <img src="/dist/resources/assets/images/contact-lens 1.png" alt="" class="content-list-img">
+                <span class="content-list-title">Contact Lens Packaging</span>
+                <div class="content-list-tags">Product design / Packaging design / Beauty</div>
+              </div>
+            </div>
           </section>
         </div>
-        <div class="content-more-link">
-          <a href="#" class="content-more-link-btn">Load more</a>
+        <div class="view-all">
+          <span class="view">VIEW</span>
+          <span class="line"></span>
+          <span class="all-projects">ALL PROJECTS</span>
         </div>
       </section>
       <!-- End of Content-2 -->
@@ -126,33 +103,15 @@
           <section class="content-header">
             <span class="content-title">Articles</span>
           </section>
-          <section class="content-list column" style="margin: 30px 0">
-            <section class="content-list row">
-              <a href="" class="content-list-component" style="margin-right: 50px"> 
-                <div class="content-list-content">
-                  <div class="content-list-img" style="background-image: url('resources/assets/contact-lens.jpg');"></div>
-                  <header class="content-list-header">
-                    <span class="content-list-title-article">Contact Lens Packaging</span>
-                  </header>
-                  <div class="content-list-article">For those of you who are reading this for the first time, I was diagnosed with cancer on the 7th…</div>
-                  <article class="content-list-article"></article>
-                </div>
-              </a>
-              <a href="" class="content-list-component"> 
-                <div class="content-list-content">
-                  <div class="content-list-img" style="background-image: url('resources/assets/contact-lens.jpg');"></div>
-                  <header class="content-list-header">
-                    <span class="content-list-title-article">Contact Lens Packaging</span>
-                  </header>
-                  <div class="content-list-article">For those of you who are reading this for the first time, I was diagnosed with cancer on the 7th…</div>
-                  <article class="content-list-article"></article>
-                </div>
-              </a>
+          <section class="content-list row">
+            <div class="content-list-component"> 
+              <div class="content-list-content">
+                <img src="/dist/resources/assets/images/contact-lens.jpg" alt="" class="content-list-img">
+                <span class="content-list-title">Contact Lens Packaging</span>
+                <div class="content-list-article">For those of you who are reading this for the first time, I was diagnosed with cancer on the 7th…</div>
+              </div>
+            </div>
             </section>
-          </section>
-        </div>
-        <div class="content-more-link">
-          <a href="#" class="content-more-link-btn" style="color: white !important">Load more</a>
         </div>
       </section>
       <!-- End of Content-3 -->
